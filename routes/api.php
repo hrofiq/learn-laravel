@@ -8,16 +8,16 @@ Route::get('items', function () {
     return Item::all();
 }); 
 
-Route::get('items/{item}', function (Item $item){
-    return $item;
+Route::get('items/{id}', function (Item $id){
+    return $id;
 });
 
 Route::post('items', function (){
     return Item::create(Request()->all());
 });
 
-Route::delete('items/{item}', function (Item $item){
-    $item->delete();
+Route::delete('items/{id}', function (Item $id){
+    $id->delete();
     return 'Sucessfully deleted item.';
 });
 
