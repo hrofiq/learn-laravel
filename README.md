@@ -4,7 +4,7 @@ This is the simple REST API using laravel. You can find restaurant including add
 
 ## Install and run
 
-For install instruction please visit https://laravel.com/docs/5.6
+For installation instructions, you can visit https://laravel.com/docs/5.6
 
 Create database "learn_laravel" and run:
 
