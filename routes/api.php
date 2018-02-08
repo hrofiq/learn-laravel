@@ -21,11 +21,7 @@ Route::delete('items/{id}', function (Item $id){
     return 'Sucessfully deleted item.';
 });
 
-
 Route::post('items/{id}/update', function (Request $request, $id) {
-    //$item = Item::findOrFail($id);
-    //$item->update($request->all());
-    ////return Item::where(['id'=>$id])->update($request->all());
     $item = Item::find($id);
     $item->update($request->all());
     return 'Successfully updated item';
